@@ -1,7 +1,5 @@
-const minEmax = (numero, minimo, maximo, inclusivo = false) => {
-    if (numero >= minimo && numero <= maximo) {
-        return true
-    }
+const estaEntre = (minimo, maximo, numero, inclusivo = false) => {
+    return inclusivo ? numero >= minimo && numero <= maximo : numero > minimo && numero < maximo
 }
 
-minEmax(10, 50, 100)
+console.log(estaEntre(10, 100, 50))
