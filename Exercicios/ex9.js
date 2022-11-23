@@ -6,4 +6,4 @@ const repetir = (item, vezes) => {
     console.log(repeticao)
 }
 
-repetir(2, 4)
+repetir(7, 3)
